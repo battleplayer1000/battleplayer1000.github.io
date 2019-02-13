@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background: rgb(27, 31, 54);
+        }
+        button{
+            transition: 0.5s;
+        }
+        button:hover{
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="color:rgb(255, 255, 255);">Get Social</h1>
+    <div class="button" align="center">
+        <button onclick="fun_one()" style="margin: 20px;padding: 20px;border: none;width: 170px;border-radius: 5px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);background: #25D366;display: block;">
+            <i class="fa fa-whatsapp" style="font-size:100px;color:white;"></i>
+        </button>
+        <button onclick="fun_two()" style="margin: 20px;padding: 20px;border: none;width: 170px;border-radius: 5px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);background: linear-gradient(to right,#405DE6,#5851DB, #833AB4, #C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);display: block;">
+            <i class="fa fa-instagram" style="font-size:100px;color:white;"></i>
+        </button>
+        <button onclick=fun_three() style="margin: 20px;padding: 20px;border: none;width: 170px;border-radius: 5px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);background:  #3b5998;display: block;">
+            <i class="fa fa-facebook-f" style="font-size:100px;color:white;"></i>
+        </button>
+        <button onclick=fun_three() style="margin: 20px;padding: 20px;border: none;width: 170px;border-radius: 5px;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);background:  #A62C69;display: block;">
+            <i class="fa fa-support" style="font-size:100px;color:white;"></i>
+        </button>
+        <p id="par_one" style="display: none;">
+            Whatsapp is an application built for the communicating and connecting people.
+            <a href="https:\\www.whatsapp.com"><button style="width:100px;height:50px;background:#25D366;border: none;color: white;">Visit Whatsapp</button></a>
+        </p>
+        <p id="par_two" style="display: none;">
+            Instagram is an application built for the communicating and connecting people.
+            <a href="https:\\www.instagram.com"><button style="width:100px;height:50px;background: linear-gradient(to right,#405DE6,#5851DB, #833AB4, #C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);border: none;color: white;">Visit Instagram</button></a>
+        </p>
+        <p id="par_three" style="display: none;">
+            Instagram is an application built for the communicating and connecting people.
+            <a href="https:\\www.facebook.com"><button style="width:100px;height:50px;background: #3b5998;border: none;color: white;">Visit Facebook</button></a>
+        </p>
+        <p id="par_three" style="display: none;">
+            Instagram is an application built for the communicating and connecting people.
+            <a href="https:\\www.facebook.com"><button style="width:100px;height:50px;background: #3b5998;border: none;color: white;">Visit Facebook</button></a>
+        </p>
+    </div>
+    <script>
+        function fun_one(){
+            document.getElementById("par_one").style.display="block";
+        }
+        function fun_two() {
+                document.getElementById("par_two").style.display = "block";
+            }
+        function fun_three(){
+            document.getElementById("par_three").style.display="block";
+        }
+    </script>
+</body>
+</html>
