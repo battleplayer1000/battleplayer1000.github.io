@@ -22,6 +22,15 @@ and open the template in the editor.
         </title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
+    <script>
+        function sachi()
+        { 
+            if(document.getElementByid("sachi")=="sachi")
+            {
+                alert("welcome sachi");
+            }
+        }
+    </script>
     <body>
         <header>
             <div class="container center-div shadow">
@@ -39,7 +48,7 @@ and open the template in the editor.
                                 <label>Enter The Password</label>
                                 <input type="text" class="form-control" name="pass" autocomplete="off" placeholder="Password">
                             </div>
-                            <input type="submit" class="btn btn-success" style="background-color: blue;border-color: blue" name="submit"> 
+                            <input id="sachi" type="button" value="submit" onclick="sachi" class="btn btn-success" style="background-color: blue;border-color: blue" name="submit"> 
                             <a href="">Click here to register.</a>
                         </form>
                     </div>
