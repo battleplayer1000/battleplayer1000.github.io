@@ -25,7 +25,7 @@ and open the template in the editor.
     <script>
         function sachi()
         { 
-            if(document.getElementByid("sachi")=="sachi")
+            if(document.getElementByid("sachi").value=="sachi")
             {
                 alert("welcome sachi");
             }
@@ -46,9 +46,9 @@ and open the template in the editor.
                             </div>
                             <div class="form-group">
                                 <label>Enter The Password</label>
-                                <input type="text" class="form-control" name="pass" autocomplete="off" placeholder="Password">
+                                <input id="sachi" type="text" class="form-control" name="pass" autocomplete="off" placeholder="Password">
                             </div>
-                            <input id="sachi" type="button" value="submit" onclick="sachi" class="btn btn-success" style="background-color: blue;border-color: blue" name="submit"> 
+                            <input type="button" value="submit" onclick="sachi" class="btn btn-success" style="background-color: blue;border-color: blue" name="submit"> 
                             <a href="">Click here to register.</a>
                         </form>
                     </div>
